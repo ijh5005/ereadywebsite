@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>EReady</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+  <link rel="stylesheet" href="./css/master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="container" ng-app="app" ng-controller="main">
+    <div class="nav flex">
+      <div class="logo">
+        <p class="logoText"> {{company}} </p>
+      </div>
+      <div class="menu flex">
+        <div data="0" ng-click="navigate($event)" class="homeNav menuOption menuHighlight">Home</div>
+        <div data="1" ng-click="navigate($event)" class="aboutNav menuOption">About Us</div>
+        <div data="2" ng-click="navigate($event)" class="eventNav menuOption">Events</div>
+        <div data="3" ng-click="navigate($event)" class="membershipsNav menuOption">Memberships</div>
+        <div data="4" ng-click="navigate($event)" class="partnerships menuOption">Partnerships</div>
+        <div data="5" ng-click="navigate($event)" class="contactNav menuOption menuOptionLast">Contact</div>
+      </div>
+    </div>
+    <div class="intro flex">
+      <div class="action flex">
+        <div class="pages flex">
+          <p class="none hometext">Join a dating community</p>
+        </div>
+        <div class="pages flex">
+          <p class="none hometext">About Us</p>
+        </div>
+        <div class="pages flex">
+          <p class="none hometext">Events</p>
+        </div>
+        <div class="pages flex">
+          <p class="none hometext">Memberships</p>
+        </div>
+        <div class="pages flex">
+          <p class="none hometext">Partnerships</p>
+        </div>
+        <div class="pages flex">
+          <p class="none hometext">Contact Us</p>
+        </div>
+      </div>
+      <div class="picSection flex">
+        <div class="pic picOne"></div>
+        <div class="pic picTwo"></div>
+        <div class="pic picThree"></div>
+        <div class="pic picFour"></div>
+        <div class="pic picFive"></div>
+        <div class="pic picSix"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
