@@ -2,7 +2,7 @@
 
 $(document).ready(() => {
 
-  $(".menuOption").click(() => { $(".intro").css("zIndex", -1) });
+  //$(".menuOption").click(() => { $(".intro").css("zIndex", -1) });
 
   const fadeInRight = (selector, time) => {
     $(selector).css("color", "#FFF");

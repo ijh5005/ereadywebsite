@@ -30,6 +30,9 @@ html, body {
   background-color: #5C00BB;
   height: 10vh;
   justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100vw;
   z-index: 5;
 }
@@ -96,6 +99,7 @@ html, body {
   height: 540vh;
   justify-content: space-between;
   position: relative;
+  top: 10vh;
   width: 100vw;
   z-index: 0;
 }
