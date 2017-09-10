@@ -26,6 +26,12 @@
         <div data="5" ng-click="navigate($event)" class="contactNav menuOption menuOptionLast">Contact</div>
       </div>
     </div>
+    <div class="changingbackground flex">
+      <div class="colorBoxHolder flex">
+        <div data="{{ box }}" class="colorBox" ng-repeat="box in boxes"></div>
+      </div>
+    </div>
+    <div class="changingbackground liner"></div>
     <div class="intro flex">
       <div class="action flex">
         <div class="pages flex">

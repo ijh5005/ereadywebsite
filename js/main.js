@@ -26,12 +26,12 @@ $(document).ready(() => {
 
 const app = angular.module("app", []);
 
-app.controller("main", ["$scope", "$timeout", function($scope, $timeout){
+app.controller("main", ["$scope", "$timeout", "$interval", function($scope, $timeout, $interval){
   $scope.company = "entertainment ready";
+
   $scope.navigate = (e) => {
     const className = e.target.className;
     const selector = e.target.attributes.data.nodeValue;
-    console.log(selector)
     if (className.includes("homeNav")) {
       $scope.movePage(0);
       $scope.navHighlight(0);
@@ -65,5 +65,60 @@ app.controller("main", ["$scope", "$timeout", function($scope, $timeout){
   $scope.navHighlight = (data) => {
     $(".menuOption").removeClass("menuHighlight");
     $(".menuOption[data="+data+"]").addClass("menuHighlight");
+
+    if(data === 0){
+      $scope.homepage = true;
+    } else {
+      $scope.homepage = false;
+    }
+
   }
+  $scope.boxes = [1,   2,  3,  4,  5,  6,  7,  8,  9, 10,
+                  11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                  21, 22, 23, 24, 25];
+  $scope.randomHighlight = (low, high) => {
+    const randomBoxDataNumber = Math.floor(Math.random() * high) + low;
+    $(".colorBox[data="+randomBoxDataNumber+"]").css("backgroundColor", "#5C00BB");
+  }
+
+  $scope.resetHighlight = () => {
+    $(".colorBox").css("backgroundColor", "");
+  }
+
+  $timeout(() => {
+    $(".colorBoxHolder").fadeIn();
+    $scope.randomHighlight(1, 25);
+    $scope.randomHighlight(1, 25);
+    $scope.randomHighlight(1, 25);
+    $scope.randomHighlight(1, 25);
+  }, 10);
+
+  $scope.homepage = true;
+  $scope.homepageCheckVar = true;
+
+  $scope.homepageCheck = () => {
+    if($scope.homepage === true){
+      $scope.homepageCheckVar = true;
+      $(".colorBoxHolder").fadeIn(600);
+    } else {
+      $scope.homepageCheckVar = false;
+      $(".colorBoxHolder").fadeOut(600);
+    }
+  }
+
+  $interval(function () {
+    $scope.homepageCheck();
+  }, 10);
+
+  $interval(function () {
+    if($scope.homepageCheckVar){
+      $scope.resetHighlight();
+      $scope.randomHighlight(1, 25);
+      $scope.randomHighlight(1, 25);
+      $scope.randomHighlight(1, 25);
+      $scope.randomHighlight(1, 25);
+    }
+  }, 10000);
+
+
 }]);

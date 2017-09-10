@@ -61,8 +61,38 @@ html, body {
   position: relative;
 }
 
-.intro {
+.changingbackground {
+  align-items: center;
   background-color: #470091;
+  height: 90vh;
+  position: absolute;
+  top: 10vh;
+  width: 75vw;
+  z-index: -1;
+}
+
+.liner {
+  left: 75vw;
+  width: 25vw;
+}
+
+.colorBoxHolder {
+  filter: blur(4px);
+  flex-wrap: wrap;
+  height: 44em;
+  opacity: 0.4;
+  width: 44em;
+}
+
+.colorBox {
+  background-color: #470091;
+  height: 20%;
+  transition: background-color 1s;
+  width: 20%;
+}
+
+.intro {
+  /*background-color: #470091;*/
   height: 540vh;
   justify-content: space-between;
   position: relative;
@@ -76,7 +106,7 @@ html, body {
   position: relative;
   top: 0vh;
   transition: top 2s;
-  width: 76vw;
+  width: 75vw;
 }
 
 .pages {
@@ -99,14 +129,14 @@ html, body {
   position: relative;
   top: 0vh;
   transition: top 2s;
-  width: 24vw;
+  width: 25vw;
 }
 
 .picSection .pic {
   background-size: 100% 100%;
   height: 100%;
   opacity: 0.2;
-  width: 24vw;
+  width: 25vw;
 }
 
 .picOne {
