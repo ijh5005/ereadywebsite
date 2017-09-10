@@ -91,7 +91,7 @@ app.controller("main", ["$scope", "$timeout", "$interval", function($scope, $tim
     $scope.randomHighlight(1, 25);
     $scope.randomHighlight(1, 25);
     $scope.randomHighlight(1, 25);
-  }, 10);
+  }, 1200);
 
   $scope.homepage = true;
   $scope.homepageCheckVar = true;
