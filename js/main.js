@@ -55,9 +55,7 @@ app.controller("main", ["$scope", "$timeout", "$interval", function($scope, $tim
   $scope.movePage = (location) => {
     $(".pages").fadeOut("200");
     $(".action").css("top", location + "vh");
-    $timeout(() => {
-      $(".picSection").css("top", location + "vh");
-    }, 500);
+    $(".picSection").css("top", location + "vh");
     $timeout(() => {
       $(".pages").fadeIn("200");
     }, 1200);

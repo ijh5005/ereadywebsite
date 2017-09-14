@@ -114,13 +114,32 @@ html, body {
 }
 
 .pages {
+  flex-direction: column;
   height: 100%;
 }
 
 .intro p {
-  font-size: 8em;
+  /*font-size: 8em;*/
+  /*font-size: 2em;*/
   transition: font-size 1s;
   z-index: 5;
+}
+
+.pageTitle {
+  font-size: 6em;
+  margin: 0;
+  z-index: 5;
+}
+
+.pageBody {
+  font-size: 2em;
+  margin: 1em;
+  width: 50vw;
+  z-index: 5;
+}
+
+.hometext {
+  font-size: 8rem;
 }
 
 .hometext:hover {
