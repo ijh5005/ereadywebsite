@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>EReady</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
   <link rel="stylesheet" href="./css/master.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -14,16 +15,24 @@
 <body>
   <div class="container" ng-app="app" ng-controller="main">
     <div class="nav flex">
-      <div class="logo">
+      <div data="0" ng-click="navigate($event)" class="logo flex pointer">
         <p class="logoText"> {{company}} </p>
+        <div class="logoBox">
+          <div class="e flex">E</div>
+          <div class="r flex">R</div>
+          <dix class="letterHolder">
+            <div class="e flex letters">E</div>
+            <div class="r flex letters">R</div>
+          </dix>
+        </div>
       </div>
       <div class="menu flex">
-        <div data="0" ng-click="navigate($event)" class="homeNav menuOption menuHighlight">Home</div>
-        <div data="1" ng-click="navigate($event)" class="aboutNav menuOption">About Us</div>
-        <div data="2" ng-click="navigate($event)" class="eventNav menuOption">Events</div>
-        <div data="3" ng-click="navigate($event)" class="membershipsNav menuOption">Memberships</div>
-        <div data="4" ng-click="navigate($event)" class="partnerships menuOption">Partnerships</div>
-        <div data="5" ng-click="navigate($event)" class="contactNav menuOption menuOptionLast">Contact</div>
+        <div data="0" ng-click="navigate($event)" class="menuOption pointer homeNav menuHighlight">Home</div>
+        <div data="1" ng-click="navigate($event)" class="menuOption pointer aboutNav">About Us</div>
+        <div data="2" ng-click="navigate($event)" class="menuOption pointer eventNav">Events</div>
+        <div data="3" ng-click="navigate($event)" class="menuOption pointer membershipsNav">Memberships</div>
+        <div data="4" ng-click="navigate($event)" class="menuOption pointer partnerships">Partnerships</div>
+        <div data="5" ng-click="navigate($event)" class="menuOption pointer contactNav menuOptionLast">Contact</div>
       </div>
     </div>
     <div class="changingbackground flex">
@@ -35,7 +44,7 @@
     <div class="intro flex">
       <div class="action flex">
         <div class="pages flex">
-          <p class=" hometext">Join a dating community</p>
+          <p class="hometext pointer">Join a dating community</p>
         </div>
         <div class="pages flex">
           <p class="pageTitle">About Us</p>

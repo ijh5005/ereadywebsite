@@ -29,10 +29,10 @@ const app = angular.module("app", []);
 app.controller("main", ["$scope", "$timeout", "$interval", function($scope, $timeout, $interval){
   $scope.company = "entertainment ready";
 
-  $scope.navigate = (e) => {
+  $scope.navigate = (e) => {console.log(e);
     const className = e.target.className;
     const selector = e.target.attributes.data.nodeValue;
-    if (className.includes("homeNav")) {
+    if (className.includes("homeNav") || className.includes("logo")) {
       $scope.movePage(0);
       $scope.navHighlight(0);
     } else if (className.includes("aboutNav")) {
