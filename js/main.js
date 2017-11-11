@@ -76,7 +76,7 @@ app.controller("main", ["$scope", "$timeout", "$interval", function($scope, $tim
                   21, 22, 23, 24, 25];
   $scope.randomHighlight = (low, high) => {
     const randomBoxDataNumber = Math.floor(Math.random() * high) + low;
-    $(".colorBox[data="+randomBoxDataNumber+"]").css("backgroundColor", "#5C00BB");
+    $(".colorBox[data="+randomBoxDataNumber+"]").css("backgroundColor", "#4a0099");
   }
 
   $scope.resetHighlight = () => {
@@ -116,7 +116,7 @@ app.controller("main", ["$scope", "$timeout", "$interval", function($scope, $tim
       $scope.randomHighlight(1, 25);
       $scope.randomHighlight(1, 25);
     }
-  }, 10000);
+  }, 6000);
 
 
 }]);
