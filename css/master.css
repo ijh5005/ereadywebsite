@@ -25,54 +25,6 @@ html, body {
   width: 100vw;
 }
 
-/*.logo {
-  font-size: 1.2em;
-  margin-left: 2em;
-}
-
-.logoBox {
-  font-family: 'Courgette', cursive;
-  font-size: 0.14em;
-  height: 10em;
-  position: relative;
-  width: 10em;
-}
-
-.e, .r {
-  background-color: #470091;
-  font-size: 8em;
-  height: 50%;
-  opacity: 0.5;
-  position: relative;
-  width: 50%;
-}
-
-.e {
-  left: 22.5%;
-  top: 14.5%;
-}
-
-.r {
-  left: 27.5%;
-  top: -14.5%;
-}
-
-.letters {
-  background-color: transparent;
-  opacity: 1;
-}
-
-.letterHolder {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}*/
-
-
-
-
 .logo {
   font-size: 1.2em;
   margin-left: 2em;
