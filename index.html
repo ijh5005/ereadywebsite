@@ -16,13 +16,13 @@
   <div class="container" ng-app="app" ng-controller="main">
     <div class="nav flex">
       <div data="0" ng-click="navigate($event)" class="logo flex pointer">
-        <p class="logoText"> {{company}} </p>
+        <!-- <p class="logoText"> {{company}} </p> -->
         <div class="logoBox">
-          <div class="e flex">E</div>
-          <div class="r flex">R</div>
+          <div class="e flex">E<span class="logoFinish">ntertainment</span></div>
+          <div class="r flex">R<span class="logoFinish">eady</span></div>
           <dix class="letterHolder">
-            <div class="e flex letters">E</div>
-            <div class="r flex letters">R</div>
+            <div class="e flex letters">E<span class="logoFinish">ntertainment</span></div>
+            <div class="r flex letters">R<span class="logoFinish">eady</span></div>
           </dix>
         </div>
       </div>
@@ -44,41 +44,55 @@
     <div class="intro flex">
       <div class="action flex">
         <div class="pages flex">
-          <p class="hometext pointer">Join a dating community</p>
+          <p class="hometext pointer">Join our dating community</p>
         </div>
         <div class="pages flex">
-          <p class="pageTitle">About Us</p>
-          <p class="pageBody flex">
-            Entertainment Ready is a Entertainment company that currently specializes in single’s events that focus on safety and fun. We call this type of dating, “PG Dating”. We focus not on match making but on the security of our singles and encourage self discovery.
-            We take dating experiences to an excitingly new level by reviving the word FUN, as a verb. We take your most memorable experiences and challenge them, we take your best you and make her shine.
+          <p class="pageTitle"><span class="purpleText">A</span>bout Us</p>
+          <p class="pageBody">
+            <span class="businessName">Entertainment Ready</span> is an entertainment company that specializes in singles events in the Philadelphia Area. Instead of focusing on match making, we create environments for singles to meet other singles.
           </p>
-          <p class="pageBody flex">
-            By preserving the face-to-face dating experience and combining it with fun games designed to authenticate and rejuvenate, we have been able to create the best recipe for a lifetime of success stories.
-          </p>
-        </div>
-        <div class="pages flex">
-          <p class="pageTitle">Events</p>
-          <p class="pageBody flex">
-            Entertainment Ready hosts singles’ events each month throughout the year. These events may include: Fun and familiar game shows such as; Family Feud and The Dating Game (customized for our singles). We have also created original fun games and activities
-            to break the ice and keep our daters engaged. Check out our upcoming events for this month and if any event catches your eye, simply SIGN UP.
+          <!-- <p class="pageBody flex">
+            We also take dating experiences to an excitingly new level by reviving the word FUN, as a verb. We take your most memorable experiences and challenge them, we take your best you and make her shine.
+          </p> -->
+          <!-- <p class="pageBody flex">
+            By preserving the face-to-face dating experience and combining it with fun games designed to authenticate and rejuvenate, we have been able to create a recipe for a lifetime of success stories.
+          </p> -->
+          <p class="pageBody">
+             So, if you are single and are in the Philadelphia area, come check out one of our events.
           </p>
         </div>
         <div class="pages flex">
-          <p class="pageTitle">Memberships</p>
-          <p class="pageBody flex">
+          <p class="pageTitle"><span class="purpleText">E</span>vents</p>
+          <p class="pageBody">
+            <span class="businessName">Entertainment Ready</span> hosts singles events throughout the year. These events may include: Fun and familiar game shows customized for our singles. We have also created original fun games and activities
+            to break the ice and keep our singles engaged. Check out our upcoming events for this month.
+          </p>
+        </div>
+        <div class="pages flex">
+          <p class="pageTitle"><span class="purpleText">M</span>emberships</p>
+          <p class="pageBody">
             Memberships are not available at this time. Please contact our office for more information.
           </p>
         </div>
         <div class="pages flex">
-          <p class="pageTitle">Partnerships</p>
-          <p class="pageBody flex">
-            Entertainment Ready welcomes partnerships with local businesses, non-profit organizations, professionals offering related specialized services, and interns in the Philadelphia area. If you are interested and would like more information, please email us
-            at: entertainmentready@gmail.com
+          <p class="pageTitle"><span class="purpleText">P</span>artnerships</p>
+          <p class="pageBody">
+             <span class="businessName">Entertainment Ready</span> welcomes partnerships with local businesses, non-profit organizations, professionals offering related specialized services, and interns in the Philadelphia area. If you are interested and would like more information, please email us
+            at: entertainmentready@yahoo.com
           </p>
         </div>
         <div class="pages flex">
-          <p class="pageTitle">Contact Us</p>
-          <p class="pageBody flex"></p>
+          <p class="pageTitle"><span class="purpleText">C</span>ontact Us</p>
+          <div class="contactPageBody flex">
+            <div class="c-icon pointer"><img class="contact-icon" src="./img/facebook.png" alt=""> facebook.com/entertainmentready</div>
+            <div class="c-icon pointer"><img class="contact-icon" src="./img/twitter.png" alt=""> entertainmentready@MalibuD2</div>
+            <div class="c-icon pointer">
+              <a href="https://www.youtube.com/channel/UCl8a4MIveT78ydPnzM7Ke2A/featured">
+                <img class="contact-icon" src="./img/youtube.png" alt=""> entertainmentreadytv
+              </a>
+            </div>
+            <div class="c-icon pointer"><img class="contact-icon" src="./img/yahoo.jpg" alt=""> entertainmentready@yahoo.com</div>
+          </div>
         </div>
       </div>
       <div class="picSection flex">
